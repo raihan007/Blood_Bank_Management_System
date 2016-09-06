@@ -1,0 +1,2 @@
+D:\Raihan\OneDrive\ADBMS\Final Project\Blood Bank\BloodBankManagmentSystem\BloodBankManagmentSystem\bin\Debug\BloodBankManagmentSystem.exe.config
+D:\Raihan\OneDrive\ADBMS\Final Project\Blood Bank\Blood-Bank-Management-System-\BloodBankManagementSystem\BloodBankManagmentSystem\bin\Debug\BloodBankManagmentSystem.exe.config

@@ -1,0 +1,298 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{201EC7BC-1A92-4029-83A2-84CDE288D989}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BloodBankManagmentSystem</RootNamespace>
+    <AssemblyName>BloodBankManagmentSystem</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Oracle.ManagedDataAccess, Version=4.121.2.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AllBranchesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllBranchesForm.Designer.cs">
+      <DependentUpon>AllBranchesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bloood Request\BloodReqEntryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bloood Request\BloodReqEntryForm.Designer.cs">
+      <DependentUpon>BloodReqEntryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bloood Request\BloodRequestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bloood Request\BloodRequestForm.Designer.cs">
+      <DependentUpon>BloodRequestForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminDashBoard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminDashBoard.Designer.cs">
+      <DependentUpon>AdminDashBoard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DonorDashBoard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DonorDashBoard.Designer.cs">
+      <DependentUpon>DonorDashBoard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BranchDashBoard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BranchDashBoard.Designer.cs">
+      <DependentUpon>BranchDashBoard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DonateBloodEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DonateBloodEntry.Designer.cs">
+      <DependentUpon>DonateBloodEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DonorDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DonorDetails.Designer.cs">
+      <DependentUpon>DonorDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeeListForm.Designer.cs">
+      <DependentUpon>EmployeeListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmpEntryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmpEntryForm.Designer.cs">
+      <DependentUpon>EmpEntryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DonorEntryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DonorEntryForm.Designer.cs">
+      <DependentUpon>DonorEntryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AllBloodDonateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllBloodDonateForm.Designer.cs">
+      <DependentUpon>AllBloodDonateForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DonorsListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DonorsListForm.Designer.cs">
+      <DependentUpon>DonorsListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\Access.cs" />
+    <Compile Include="Entities\Blood.cs" />
+    <Compile Include="Entities\BloodRequest.cs" />
+    <Compile Include="Entities\Donor.cs" />
+    <Compile Include="DonorDonateHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DonorDonateHistory.Designer.cs">
+      <DependentUpon>DonorDonateHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PublicSearchForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PublicSearchForm.Designer.cs">
+      <DependentUpon>PublicSearchForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Shared\BranchForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Shared\BranchForm.Designer.cs">
+      <DependentUpon>BranchForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Database\DataContext.cs" />
+    <Compile Include="Employee_Work\EmployeeDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee_Work\EmployeeDashboard.Designer.cs">
+      <DependentUpon>EmployeeDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\Branches.cs" />
+    <Compile Include="Entities\Employee.cs" />
+    <Compile Include="Entities\Locations.cs" />
+    <Compile Include="Entrance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Entrance.Designer.cs">
+      <DependentUpon>Entrance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Shared\OwnProfileForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Shared\OwnProfileForm.Designer.cs">
+      <DependentUpon>OwnProfileForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Shared\ChangeAccessInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Shared\ChangeAccessInfo.Designer.cs">
+      <DependentUpon>ChangeAccessInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Shared\LogActivityForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Shared\LogActivityForm.Designer.cs">
+      <DependentUpon>LogActivityForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AllBranchesForm.resx">
+      <DependentUpon>AllBranchesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bloood Request\BloodReqEntryForm.resx">
+      <DependentUpon>BloodReqEntryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bloood Request\BloodRequestForm.resx">
+      <DependentUpon>BloodRequestForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminDashBoard.resx">
+      <DependentUpon>AdminDashBoard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DonorDashBoard.resx">
+      <DependentUpon>DonorDashBoard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BranchDashBoard.resx">
+      <DependentUpon>BranchDashBoard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DonateBloodEntry.resx">
+      <DependentUpon>DonateBloodEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DonorDetails.resx">
+      <DependentUpon>DonorDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeListForm.resx">
+      <DependentUpon>EmployeeListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmpEntryForm.resx">
+      <DependentUpon>EmpEntryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DonorEntryForm.resx">
+      <DependentUpon>DonorEntryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllBloodDonateForm.resx">
+      <DependentUpon>AllBloodDonateForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DonorsListForm.resx">
+      <DependentUpon>DonorsListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DonorDonateHistory.resx">
+      <DependentUpon>DonorDonateHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PublicSearchForm.resx">
+      <DependentUpon>PublicSearchForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Shared\BranchForm.resx">
+      <DependentUpon>BranchForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entrance.resx">
+      <DependentUpon>Entrance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Shared\OwnProfileForm.resx">
+      <DependentUpon>OwnProfileForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Shared\ChangeAccessInfo.resx">
+      <DependentUpon>ChangeAccessInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Shared\LogActivityForm.resx">
+      <DependentUpon>LogActivityForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\bag.png" />
+    <Content Include="Images\blood-request.png" />
+    <Content Include="Images\blood.ico" />
+    <Content Include="Images\branch2.png" />
+    <Content Include="Images\cell-14-2-480.png" />
+    <Content Include="Images\group.png" />
+    <Content Include="Images\heart-beat.png" />
+    <Content Include="Images\reports.png" />
+    <None Include="Resources\logout-24.png" />
+    <None Include="Images\settings.png" />
+    <None Include="Images\settingIcon.png" />
+    <Content Include="Images\user.png" />
+    <Content Include="Images\users.png" />
+    <None Include="Resources\1452206761_man15.png" />
+    <None Include="Resources\settings.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
